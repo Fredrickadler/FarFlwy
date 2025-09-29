@@ -13,13 +13,13 @@
     "buttonTitle": "Check this out",
     "splashImageUrl": "https://flwy-one.vercel.app/splash.png",
     "splashBackgroundColor": "#eeccff",
-    "webhookUrl": "https://flwy-one.vercel.app/api/webhook",   // اضافه کردن webhook URL
+    "webhookUrl": "https://flwy-one.vercel.app/api/webhook",   
     "button": {
       "title": "Open Frame",
       "action": {
         "type": "launch_frame",
-        "url": "https://flwy-one.vercel.app",  // URL فریم شما
-        "splashImageUrl": "https://flwy-one.vercel.app/splash.png", // تصویر اسپلاش
+        "url": "https://flwy-one.vercel.app",   
+        "splashImageUrl": "https://flwy-one.vercel.app/splash.png", 
         "splashBackgroundColor": "#eeccff"
       }
     }
