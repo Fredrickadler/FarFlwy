@@ -2,7 +2,7 @@
   "accountAssociation": {
     "header": "eyJmaWQiOjkyOTkxMCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDQ3ZTg5Q0YzMDBFNzI5MGNFMEE2Mjc2NzAwQTU1NjM5YmZCYkE3MzUifQ",
     "payload": "eyJkb21haW4iOiJmYXItZmx3eS52ZXJjZWwuYXBwIn0",
-    "signature": "MHg5MDJmNmIxMDBmZmM4NjRlMjgxYTEwNmVmY2MxYjZiNWU4OWVhMTVkNmFmOTI1NTRlOTIxODcxM2ZmNTYxNzRkMjQxZGMxYWRlNzc0MmQ5ZDg3YzQ4OTFhOGE0YTg0Mjg4MzgyMmNkYmMxY2I2MDAzNmJkMjFlNWU1MzEyMTIzYzFi"
+    "signature": "your_new_generated_signature"
   },
   "frame": {
     "version": "1",
