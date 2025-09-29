@@ -7,12 +7,12 @@
   "frame": {
     "version": "1",
     "name": "Example Frame",
-    "iconUrl": "https://farflwy.vercel.app/icon.png",
-    "homeUrl": "https://farflwy.vercel.app",
-    "imageUrl": "https://farflwy.vercel.app/image.png",
+    "iconUrl": "https://far-flwy.vercel.app/icon.png",
+    "homeUrl": "https://far-flwy.vercel.app",
+    "imageUrl": "https://far-flwy.vercel.app/image.png",
     "buttonTitle": "Check this out",
-    "splashImageUrl": "https://farflwy.vercel.app/splash.png",
+    "splashImageUrl": "https://far-flwy.vercel.app/splash.png",
     "splashBackgroundColor": "#eeccff",
-    "webhookUrl": "https://farflwy.vercel.app/api/webhook"
+    "webhookUrl": "https://far-flwy.vercel.app/api/webhook"
   }
 }
