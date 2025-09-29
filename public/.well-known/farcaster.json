@@ -1,4 +1,4 @@
-buttonTitle": "Check this out",
+{
     "splashImageUrl": "https://flwy-one.vercel.app/splash.png",
     "splashBackgroundColor": "#eeccff",
     "webhookUrl": "https://flwy-one.vercel.app/api/webhook",   
