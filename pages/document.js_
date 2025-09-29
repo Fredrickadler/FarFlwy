@@ -1,0 +1,24 @@
+// pages/_document.js
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html>
+        <Head>
+          {/* اضافه کردن متا دیتا برای Farcaster */}
+          <meta
+            name="fc:frame"
+            content='{"version":"next","imageUrl":"https://example.com/image.png","button":{"title":"Open Frame","action":{"type":"launch_frame","name":"My App","url":"https://yourframeurl.com","splashImageUrl":"https://example.com/splash.png","splashBackgroundColor":"#eeccff"}}}'
+          />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+}
+
+export default MyDocument;
