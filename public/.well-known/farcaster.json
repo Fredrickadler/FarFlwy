@@ -1,18 +1,16 @@
-{
-  "accountAssociation": {
-    "header": "eyJmaWQiOjkyOTkxMCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDQ3ZTg5Q0YzMDBFNzI5MGNFMEE2Mjc2NzAwQTU1NjM5YmZCYkE3MzUifQ",
-    "payload": "eyJkb21haW4iOiJmYXJmbHd5LnZlcmNlbC5hcHAifQ",
-    "signature": "MHg5MDJmNmIxMDBmZmM4NjRlMjgxYTEwNmVmY2MxYjZiNWU4OWVhMTVkNmFmOTI1NTRlOTIxODcxM2ZmNTYxNzRkMjQxZGMxYWRlNzc0MmQ5ZDg3YzQ4OTFhOGE0YTg0Mjg4MzgyMmNkYmMxY2I2MDAzNmJkMjFlNWU1MzEyMTIzYzFi"
-  },
-  "frame": {
-    "version": "1",
-    "name": "Example Frame",
-    "iconUrl": "https://far-flwy.vercel.app/icon.png",
-    "homeUrl": "https://far-flwy.vercel.app",
-    "imageUrl": "https://far-flwy.vercel.app/image.png",
-    "buttonTitle": "Check this out",
-    "splashImageUrl": "https://far-flwy.vercel.app/splash.png",
-    "splashBackgroundColor": "#eeccff",
-    "webhookUrl": "https://far-flwy.vercel.app/api/webhook"
-  }
+"accountAssociation": {
+  "header": "eyJmaWQiOjkyOTkxMCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDQ3ZTg5Q0YzMDBFNzI5MGNFMEE2Mjc2NzAwQTU1NjM5YmZCYkE3MzUifQ",
+  "payload": "eyJkb21haW4iOiJmYXItZmx3eS52ZXJjZWwuYXBwIn0",
+  "signature": "MHg5MDJmNmIxMDBmZmM4NjRlMjgxYTEwNmVmY2MxYjZiNWU4OWVhMTVkNmFmOTI1NTRlOTIxODcxM2ZmNTYxNzRkMjQxZGMxYWRlNzc0MmQ5ZDg3YzQ4OTFhOGE0YTg0Mjg4MzgyMmNkYmMxY2I2MDAzNmJkMjFlNWU1MzEyMTIzYzFi"
+},
+"frame": {
+  "version": "1",
+  "name": "Example Frame",
+  "iconUrl": "https://far-flwy.vercel.app/icon.png",
+  "homeUrl": "https://far-flwy.vercel.app",
+  "imageUrl": "https://far-flwy.vercel.app/image.png",
+  "buttonTitle": "Check this out",
+  "splashImageUrl": "https://far-flwy.vercel.app/splash.png",
+  "splashBackgroundColor": "#eeccff",
+  "webhookUrl": "https://far-flwy.vercel.app/api/webhook"
 }
