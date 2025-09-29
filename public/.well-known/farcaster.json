@@ -18,7 +18,8 @@
       "title": "Open Frame",
       "action": {
         "type": "launch_frame",
-        "url": "https://far-flwy.vercel.app",  // URL فریم شما
+        "name": "Farcaster Frame",
+        "url": "https://far-flwy.vercel.app",
         "splashImageUrl": "https://far-flwy.vercel.app/splash.png",
         "splashBackgroundColor": "#eeccff"
       }
