@@ -13,15 +13,15 @@
     "buttonTitle": "Check this out",
     "splashImageUrl": "https://flwy-one.vercel.app/splash.png",
     "splashBackgroundColor": "#eeccff",
-    "webhookUrl": "https://flwy-one.vercel.app/api/webhook",   
+    "webhookUrl": "https://flwy-one.vercel.app/api/webhook",
     "button": {
       "title": "Open Frame",
       "action": {
         "type": "launch_frame",
-        "url": "https://flwy-one.vercel.app",   
-        "splashImageUrl": "https://flwy-one.vercel.app/splash.png", 
+        "url": "https://flwy-one.vercel.app",
+        "splashImageUrl": "https://flwy-one.vercel.app/splash.png",
         "splashBackgroundColor": "#eeccff"
       }
     }
-  } 
-} 
+  }
+}
