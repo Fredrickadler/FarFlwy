@@ -6,12 +6,20 @@
   },
   "frame": {
     "version": "1",
-    "name": "Flwy Frame",
+    "name": "Flwy..!",
     "iconUrl": "https://far-flwy.vercel.app/icon.png",
     "homeUrl": "https://far-flwy.vercel.app",
-    "imageUrl": "https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg",
-    "buttonTitle": "🚀 Open Flwy",
-    "splashImageUrl": "https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg",
-    "splashBackgroundColor": "#eeccff"
+    "image": "https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg",
+    "splashImageUrl": "https://far-flwy.vercel.app/splash.png",
+    "splashBackgroundColor": "#eeccff",
+    "button": {
+      "title": "🚀 Open Flwy",
+      "action": {
+        "type": "launch_miniapp",
+        "url": "https://far-flwy.vercel.app",
+        "splashImageUrl": "https://far-flwy.vercel.app/splash.png",
+        "splashBackgroundColor": "#eeccff"
+      }
+    }
   }
 }
