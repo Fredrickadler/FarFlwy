@@ -1,4 +1,4 @@
- { 
+{
 	"accountAssociation": {
 		"header": "eyJmaWQiOjkyOTkxMCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDQ3ZTg5Q0YzMDBFNzI5MGNFMEE2Mjc2NzAwQTU1NjM5YmZCYkE3MzUifQ",
 		"payload": "eyJkb21haW4iOiJmbHd5LW9uZS52ZXJjZWwuYXBwIn0",
@@ -24,4 +24,4 @@
 			}
 		}
 	}
- }
+}
