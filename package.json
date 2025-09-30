@@ -1,27 +1,15 @@
 {
-	"accountAssociation": {
-		"header": "eyJmaWQiOjkyOTkxMCwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDQ3ZTg5Q0YzMDBFNzI5MGNFMEE2Mjc2NzAwQTU1NjM5YmZCYkE3MzUifQ",
-		"payload": "eyJkb21haW4iOiJmbHd5LW9uZS52ZXJjZWwuYXBwIn0",
-		"signature": "MHg1M2EzYzg5ZTc1MzU2M2YxZDliZmM2ZWE3ZjNkODE1ZDhkYzc2NmEwOGRkZTAyZWZjODhhYzA3MmZhYTBkZjU4NWI1NTk0MmQ2MmM5YWM4ZTQwNzE4NzUyOTgwNzVjNGYxYWJhMjQxOWI0NWM0MmZlYWI2YmRiNjk4ODJkYjQwYjFi"
+	"name": "hello-nextjs",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
 	},
-	"frame": {
-		"version": "1",
-		"name": "Fwly..!",
-		"iconUrl": "https://flwy-one.vercel.app/icon.png",
-		"homeUrl": "https://flwy-one.vercel.app",
-		"imageUrl": "https://flwy-one.vercel.app/image.png",
-		"buttonTitle": "Check this out",
-		"splashImageUrl": "https://flwy-one.vercel.app/splash.png",
-		"splashBackgroundColor": "#eeccff",
-		"webhookUrl": "https://flwy-one.vercel.app/api/webhook",
-		"button": {
-			"title": "Open Frame",
-			"action": {
-				"type": "launch_frame",
-				"url": "https://flwy-one.vercel.app",
-				"splashImageUrl": "https://flwy-one.vercel.app/splash.png",
-				"splashBackgroundColor": "#eeccff"
-			}
-		}
+	"dependencies": {
+		"next": "13.5.11",
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
 	}
 }
