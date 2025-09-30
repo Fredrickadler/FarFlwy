@@ -1,12 +1,6 @@
-import { useEffect } from "react";
 import Head from "next/head";
-import sdk from "@farcaster/frame-sdk";
 
-const Home = () => {
-  useEffect(() => {
-    sdk.actions.ready();
-  }, []);
-
+export default function Home() {
   return (
     <>
       <Head>
@@ -16,7 +10,10 @@ const Home = () => {
         {/* OpenGraph tags */}
         <meta property="og:title" content="Flwy Frame" />
         <meta property="og:description" content="Testing Farcaster Frame" />
-        <meta property="og:image" content="https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg" />
+        <meta
+          property="og:image"
+          content="https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg"
+        />
 
         {/* Farcaster Frame tags */}
         <meta property="fc:frame" content="vNext" />
@@ -31,10 +28,8 @@ const Home = () => {
 
       <main style={{ textAlign: "center", padding: "50px" }}>
         <h1>Hello Farcaster 🚀</h1>
-        <p>This is your Farcaster Frame!</p>
+        <p>Your Flwy frame is live!</p>
       </main>
     </>
   );
-};
-
-export default Home;
+}
