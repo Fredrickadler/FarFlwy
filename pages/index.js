@@ -1,41 +1,32 @@
 // pages/index.js
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Head from "next/head";
-import dynamic from "next/dynamic"; // این رو اضافه کن
 
 const IMAGE_URL = "https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg";
 const APP_URL = "https://far-flwy.vercel.app";
 const APP_NAME = "Flwy";
 
-// SDK رو dynamic import کن با ssr: false
-const FrameSDK = dynamic(
-  () => import("@farcaster/frame-sdk").then((mod) => ({ default: mod.default || mod })),
-  { ssr: false }
-);
-
 export default function Home() {
-  const [sdk, setSdk] = useState(null);
-
   useEffect(() => {
-    const loadSDK = async () => {
-      const loadedSdk = await FrameSDK();
-      setSdk(loadedSdk);
+    // فقط سمت کلاینت import کن
+    import("@farcaster/frame-sdk").then((sdk) => {
       try {
-        if (loadedSdk && loadedSdk.actions && typeof loadedSdk.actions.ready === "function") {
-          loadedSdk.actions.ready();
+        if (sdk.actions && typeof sdk.actions.ready === "function") {
+          sdk.actions.ready();
         }
       } catch (err) {
+        // swallow; if error, it will show in Vercel logs
         console.error("sdk.actions.ready error:", err);
       }
-    };
-
-    loadSDK();
+    }).catch((err) => {
+      console.error("Failed to load SDK:", err);
+    });
   }, []);
 
   const miniappEmbed = JSON.stringify({
     version: "1",
     image: IMAGE_URL,
-    imageUrl: IMAGE_URL,
+    imageUrl: IMAGE_URL, // include both for compatibility
     button: {
       title: "🚀 Open Flwy",
       action: {
@@ -75,7 +66,7 @@ export default function Home() {
         <meta property="og:description" content="Open Flwy MiniApp" />
         <meta property="og:image" content={IMAGE_URL} />
 
-        {/* Farcaster miniapp/frame embeds */}
+        {/* Farcaster miniapp/frame embeds — stringified JSON */}
         <meta name="fc:miniapp" content={miniappEmbed} />
         <meta name="fc:frame" content={frameEmbed} />
       </Head>
