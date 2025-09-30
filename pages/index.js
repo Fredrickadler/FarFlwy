@@ -2,25 +2,8 @@
 import Head from "next/head";
 
 export default function Home() {
-  const miniapp = {
-    version: "1",
-    imageUrl:
-      "https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg",
-    button: {
-      title: "🚀 Open Flwy",
-      action: {
-        type: "launch_miniapp",
-        name: "Flwy",
-        url: "https://far-flwy.vercel.app",
-        splashImageUrl:
-          "https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg",
-        splashBackgroundColor: "#eeccff"
-      }
-    }
-  };
-
-  // stringify and escape for meta tag
-  const miniappJson = JSON.stringify(miniapp).replace(/"/g, "&quot;");
+  const miniappJson =
+    '{"version":"1","imageUrl":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg","button":{"title":"🚀 Open Flwy","action":{"type":"launch_miniapp","name":"Flwy","url":"https://far-flwy.vercel.app","splashImageUrl":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg","splashBackgroundColor":"#eeccff"}}}';
 
   return (
     <>
@@ -31,9 +14,9 @@ export default function Home() {
         {/* OpenGraph for preview */}
         <meta property="og:title" content="Flwy MiniApp" />
         <meta property="og:description" content="Open Flwy" />
-        <meta property="og:image" content={miniapp.imageUrl} />
+        <meta property="og:image" content="https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg" />
 
-        {/* fc:miniapp and fc:frame */}
+        {/* Farcaster miniapp embeds */}
         <meta name="fc:miniapp" content={miniappJson} />
         <meta name="fc:frame" content={miniappJson} />
       </Head>
