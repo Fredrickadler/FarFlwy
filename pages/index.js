@@ -5,30 +5,49 @@ export default function Home() {
     <>
       <Head>
         <title>Flwy Frame</title>
-        <meta name="description" content="Testing Farcaster Frame" />
+        <meta name="description" content="Flwy MiniApp Frame" />
 
-        {/* OpenGraph tags */}
-        <meta property="og:title" content="Flwy Frame" />
-        <meta property="og:description" content="Testing Farcaster Frame" />
+        {/* MiniApp embed */}
         <meta
-          property="og:image"
-          content="https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg"
+          name="fc:miniapp"
+          content='{
+            "version":"1",
+            "imageUrl":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg",
+            "button":{
+              "title":"🚀 Open Flwy",
+              "action":{
+                "type":"launch_miniapp",
+                "name":"Flwy",
+                "url":"https://far-flwy.vercel.app",
+                "splashImageUrl":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg",
+                "splashBackgroundColor":"#eeccff"
+              }
+            }
+          }'
         />
 
-        {/* Farcaster Frame tags */}
-        <meta property="fc:frame" content="vNext" />
+        {/* Backward compatibility */}
         <meta
-          property="fc:frame:image"
-          content="https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg"
+          name="fc:frame"
+          content='{
+            "version":"1",
+            "imageUrl":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg",
+            "button":{
+              "title":"🚀 Open Flwy",
+              "action":{
+                "type":"launch_frame",
+                "name":"Flwy",
+                "url":"https://far-flwy.vercel.app",
+                "splashImageUrl":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg",
+                "splashBackgroundColor":"#eeccff"
+              }
+            }
+          }'
         />
-        <meta property="fc:frame:button:1" content="Open Flwy" />
-        <meta property="fc:frame:button:1:action" content="link" />
-        <meta property="fc:frame:button:1:target" content="https://far-flwy.vercel.app" />
       </Head>
 
-      <main style={{ textAlign: "center", padding: "50px" }}>
-        <h1>Hello Farcaster 🚀</h1>
-        <p>Your Flwy frame is live!</p>
+      <main>
+        <h1>Flwy Frame Ready ✅</h1>
       </main>
     </>
   );
