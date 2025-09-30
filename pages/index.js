@@ -4,11 +4,11 @@ import Head from "next/head";
 import sdk from "@farcaster/frame-sdk";
 
 export default function Home() {
-  // Notify Farcaster that the app is ready
   useEffect(() => {
     sdk.actions.ready();
   }, []);
 
+  // Embed JSON (new schema: "image" instead of "imageUrl")
   const miniappJson =
     '{"version":"1","image":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg","button":{"title":"🚀 Open Flwy","action":{"type":"launch_miniapp","name":"Flwy","url":"https://far-flwy.vercel.app","splashImageUrl":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg","splashBackgroundColor":"#eeccff"}}}';
 
@@ -18,7 +18,7 @@ export default function Home() {
         <title>Flwy MiniApp</title>
         <meta name="description" content="Flwy MiniApp" />
 
-        {/* OpenGraph (preview when shared) */}
+        {/* Open Graph preview */}
         <meta property="og:title" content="Flwy MiniApp" />
         <meta property="og:description" content="Open Flwy MiniApp" />
         <meta
@@ -26,14 +26,14 @@ export default function Home() {
           content="https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg"
         />
 
-        {/* Farcaster meta tags */}
+        {/* Farcaster embeds */}
         <meta name="fc:miniapp" content={miniappJson} />
         <meta name="fc:frame" content={miniappJson} />
       </Head>
 
       <main style={{ textAlign: "center", padding: "50px" }}>
         <h1>Welcome to Flwy 🚀</h1>
-        <p>This is the Flwy MiniApp frame test.</p>
+        <p>This is the Flwy MiniApp test page.</p>
       </main>
     </>
   );
