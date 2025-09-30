@@ -8,17 +8,13 @@ export default function Home() {
     sdk.actions.ready();
   }, []);
 
-  // Embed JSON (new schema: "image" instead of "imageUrl")
-  const miniappJson =
-    '{"version":"1","image":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg","button":{"title":"🚀 Open Flwy","action":{"type":"launch_miniapp","name":"Flwy","url":"https://far-flwy.vercel.app","splashImageUrl":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg","splashBackgroundColor":"#eeccff"}}}';
-
   return (
     <>
       <Head>
         <title>Flwy MiniApp</title>
         <meta name="description" content="Flwy MiniApp" />
 
-        {/* Open Graph preview */}
+        {/* Open Graph tags */}
         <meta property="og:title" content="Flwy MiniApp" />
         <meta property="og:description" content="Open Flwy MiniApp" />
         <meta
@@ -26,9 +22,17 @@ export default function Home() {
           content="https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg"
         />
 
-        {/* Farcaster embeds */}
-        <meta name="fc:miniapp" content={miniappJson} />
-        <meta name="fc:frame" content={miniappJson} />
+        {/* Farcaster MiniApp embed */}
+        <meta
+          name="fc:miniapp"
+          content='{"version":"1","image":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg","button":{"title":"🚀 Open Flwy","action":{"type":"launch_miniapp","name":"Flwy","url":"https://far-flwy.vercel.app","splashImageUrl":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg","splashBackgroundColor":"#eeccff"}}}' 
+        />
+
+        {/* Backward compatibility (frame) */}
+        <meta
+          name="fc:frame"
+          content='{"version":"1","image":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg","button":{"title":"🚀 Open Flwy","action":{"type":"launch_frame","name":"Flwy","url":"https://far-flwy.vercel.app","splashImageUrl":"https://i.postimg.cc/FrqNxpv6/3011-B096-760-E-4-A33-BD0-C-3-B4-B89142-F99.jpg","splashBackgroundColor":"#eeccff"}}}' 
+        />
       </Head>
 
       <main style={{ textAlign: "center", padding: "50px" }}>
